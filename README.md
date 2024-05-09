@@ -9,7 +9,7 @@ Microsoft Azure and many of its Security solutions support hybrid and multi-clou
 
 ## The environment (based on a real company IT environment)
 
-picture 1
+![image](https://github.com/rudneir2/Azure-Security-applied-to-a-PaaS-real-scenario/assets/97529152/2a4245a5-4071-4b39-81aa-4157850fe689)
 
 This environment runs as its core an **AKS (Azure Kubernetes Services)** running many workloads, including Web Server and Applications, connected on a diversity of others services that compose the entire Company solution, including:
 
