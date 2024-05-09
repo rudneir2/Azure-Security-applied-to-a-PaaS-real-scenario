@@ -46,6 +46,62 @@ Below, we will review in details all Security services that may be applied to th
 
 ## Security in detail (in a visual way)
 
+Below is a visual diagram to help you identify easily Security services that you may apply to that IT environment. Below the diagram is a list of Security you may apply to AKS.
+
 ![image](https://github.com/rudneir2/Azure-Security-applied-to-a-PaaS-real-scenario/assets/97529152/db78cc03-5326-4983-8168-133ac1e849ec)
+
+### AKS Security checklist
+
+**During provisioning**
+
+	1. automatic upgrade
+	2. authentication through Azure AD with RBAC
+	3. node pool OS disk encryption with customer managed key
+	4. enable private cluster
+	5. bring your own virtual network (with all your rules)
+	6. use MDC for recommendations / security alerts
+	7. use private image registry (azure container registry)
+	8. Azure policies for AKS (review it)
+	9. enable container insights (Prometheus, Grafana or Az Monitor insights) (review it)
+	10. enable Alerts for CPU/memory metrics
+	11. enable key vault (for CSI driver) 
+ 
+**From AKS Security baseline (summarized)**
+
+1. use MDC to track recommendations for AKS
+2. virtual network segmentation
+3. in-transit criptography (inside the AKS cluster)
+   - use service mesh or CSI driver (cilium or istio)
+
+4. azure private link (private endpoint)
+5. AKS managed Azure AD integration
+6. use a Managed Identity with AKS (aka workload identity)
+7. use conditional access with Azure AD and AKS
+8. use RBAC for Kubernetes authorization
+9. enable Microsoft Defender for Containers
+10. Kubernetes cluster should be accessible only over HTPPS
+11. azure container registry should be enabled with AKS
+12. vulnerability management for AKS
+13. Backup AKS using Azure Backup (based on Velero)
+
+See details below on Azure Security Baseline.
       
-    - 
+## References
+
+- AKS Security baseline
+https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/azure-kubernetes-service-aks-security-baseline
+  
+- Azure Storage Security baseline
+https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/storage-security-baseline
+
+- Azure SQL database Security baseline
+https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/azure-sql-security-baseline
+
+- Redis Cache Security baseline
+https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/azure-cache-for-redis-security-baseline
+
+- Cosmos DB Security baseline
+https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/azure-cosmos-db-security-baseline
+
+- Service Bus Security baseline
+https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/service-bus-security-baseline
