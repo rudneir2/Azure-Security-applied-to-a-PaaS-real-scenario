@@ -23,7 +23,29 @@ For some professionals that are focused on the IT infrastructure or Applications
 
 ## A Security perspective (same environment)
 
-Now, let's take a look at in the same environment, but with a Security perspective.
+Now, let's take a look at in a nutshell, the same environment above, but with a Security perspective.
 
 ![image](https://github.com/rudneir2/Azure-Security-applied-to-a-PaaS-real-scenario/assets/97529152/24885edc-8d73-4fd8-be96-c89099c431cd)
   
+- In the highlighted area **number 1** we can see different (and possible) attackers, external and internal. We can still include anonymous attackers that can be anywhere.
+
+- in the highlighted area **number 2** we have one of the most important component of an IT environment, **the network**. AKS uses lot of Azure network components and topology.
+
+- in the highlighted area **number 3** we have **Identity**, in this scenario, totally provided by **Entra ID**.
+
+- in the highlighted area **number 4** we have additional **PaaS Security services** like:
+
+    - **API Management**, adding protection to API services
+    - **Azure Key Vault**, adding protection to keys, secrets and certificates
+ 
+- in the highlighted area **number 5** there are many Security services available with Storage account, that could be applied to Blobs (object storage) or Files (File servers).
+- in the highlighted area **number 6** we may apply different Security features to Data Base services.
+- in the highlighted area **number 7** we have some others PaaS services like **Redis, Service Bus and Container Registry** that also may have different ways to get those services more secure.
+
+Below, we will review in details all Security services that may be applied to that IT environment.
+
+## Security in detail (in a visual way)
+
+
+      
+    - 
