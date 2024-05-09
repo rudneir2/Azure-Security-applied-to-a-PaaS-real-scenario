@@ -25,5 +25,5 @@ For some professionals that are focused on the IT infrastructure or Applications
 
 Now, let's take a look at in the same environment, but with a Security perspective.
 
-picture 2
+![image](https://github.com/rudneir2/Azure-Security-applied-to-a-PaaS-real-scenario/assets/97529152/24885edc-8d73-4fd8-be96-c89099c431cd)
   
