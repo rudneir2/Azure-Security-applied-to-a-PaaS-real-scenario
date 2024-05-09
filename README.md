@@ -46,6 +46,6 @@ Below, we will review in details all Security services that may be applied to th
 
 ## Security in detail (in a visual way)
 
-
+![image](https://github.com/rudneir2/Azure-Security-applied-to-a-PaaS-real-scenario/assets/97529152/db78cc03-5326-4983-8168-133ac1e849ec)
       
     - 
