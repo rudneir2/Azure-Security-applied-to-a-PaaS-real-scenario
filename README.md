@@ -74,7 +74,6 @@ Below is a visual diagram to help you identify easily Security services that you
 2. virtual network segmentation
 3. in-transit criptography (inside the AKS cluster)
    - use service mesh or CSI driver (cilium or istio)
-
 4. azure private link (private endpoint)
 5. AKS managed Azure AD integration
 6. use a Managed Identity with AKS (aka workload identity)
